@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe5e5;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 28px;
+    max-width: 500px;
+    margin: 20px;
+  }
+
+  /* Styling for buttons */
+  .btn a {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #4CAF50; /* Green for Yes */
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Styling for "No" button */
+  .btn a.no {
+    background-color: #f44336; /* Red for No */
+  }
+
+  .btn a:hover {
+    background-color: #45a049; /* Darker green for Yes on hover */
+  }
+
+  .btn a.no:hover {
+    background-color: #d32f2f; /* Darker red for No on hover */
+  }
+  
+  /* If tenor-gif-embed is a class inside .container */
+  .container .tenor-gif-embed {
+    max-width: 350px;
+  }
+  
